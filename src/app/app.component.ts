@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
     <div id="content-area" class="col-md-9" role="main">
       <div id="content">
         <h1>ng2 Products App</h1>
-        <h2><span>Products</span></h2>
+        <alert type="success">Products</alert>
+        <!--<h2><span>Products</span></h2> -->
         <table class="table">
           <thead>
           <tr>
