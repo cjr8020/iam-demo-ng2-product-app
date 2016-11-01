@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  MDM_PRODUCT_SERVER: "http://d-072cxt.corp.standard.com:10080", 
+  MDM_PRODUCT_API: "/mdm-product-service/products"
+
 };

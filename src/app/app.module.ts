@@ -5,6 +5,8 @@ import { HttpModule, Http, XHRBackend, RequestOptions } from '@angular/http';
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -19,4 +21,9 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor() {
+    console.log(environment);
+  }
+}
