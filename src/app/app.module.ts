@@ -24,7 +24,5 @@ import { ConfigService } from './shared/config.service';
 })
 export class AppModule {
 
-  constructor() {
-    console.log(environment);
-  }
+  constructor() { }
 }
