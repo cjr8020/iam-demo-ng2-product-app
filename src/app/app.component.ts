@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MdmProductService } from './mdm-product.service';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import { Component } from '@angular/core';
         </table>
       </div>
     </div>
-  `
+  `,
+  providers: [MdmProductService]
 })
 export class AppComponent {
 
@@ -32,4 +34,8 @@ export class AppComponent {
     "Dental",
     "Vision"
   ];
+
+  constructor(private mdmProductService: MdmProductService) {
+    
+  }
 }

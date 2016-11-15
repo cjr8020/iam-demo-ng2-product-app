@@ -29,6 +29,10 @@ testem.log
 
 ####### common ignores below #######
 
+# Visual Studio Code
+.vscode
+
+
 # Eclipse/RAD
 .settings/
 .metadata/

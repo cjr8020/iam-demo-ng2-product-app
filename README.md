@@ -1,5 +1,36 @@
 # iam-demo-ng2-product-app
 
+Consider 
+  configuration service injectable into 
+  some form of "data" service for getting mdm-product-data.
+
+### create config service
+
+```
+$ mkdir src/app/shared
+craiskin@xubi-one:~/ws/standard/iam/iam-demo-ng2-product-app $ ng g s shared/Config
+Could not start watchman; falling back to NodeWatcher for file system events.
+Visit http://ember-cli.com/user-guide/#watchman for more info.
+installing service
+  create src/app/shared/config.service.spec.ts
+  create src/app/shared/config.service.ts
+  WARNING Service is generated but not provided, it must be provided to be used
+
+```
+
+### create mdm product service
+
+```
+$ ng g s MdmProduct
+Could not start watchman; falling back to NodeWatcher for file system events.
+Visit http://ember-cli.com/user-guide/#watchman for more info.
+installing service
+  create src/app/mdm-product.service.spec.ts
+  create src/app/mdm-product.service.ts
+  WARNING Service is generated but not provided, it must be provided to be used
+
+```
+
 
 
 ## Scaffold Notes

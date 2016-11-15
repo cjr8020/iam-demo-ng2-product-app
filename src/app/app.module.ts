@@ -6,6 +6,7 @@ import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { ConfigService } from './shared/config.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { environment } from '../environments/environment';
     HttpModule,
     AlertModule
   ],
-  providers: [],
+  providers: [ ConfigService ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
