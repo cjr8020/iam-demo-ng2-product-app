@@ -11,12 +11,17 @@ import { MdmProductService } from './mdm-product.service';
 })
 export class AppComponent {
 
-  products: Product[];
+  private products: Product[];
 
-  constructor(private mdmProductService: MdmProductService) { }
+  public constructor(private mdmProductService: MdmProductService) { }
 
-  ngOnInit(): void {
-    this.products = this.mdmProductService.getProducts();
+  private ngOnInit(): void {
+    this.getProducts();
+  }
+
+  public getProducts(): void {
+    this.mdmProductService.getProducts()
+      .then(products => this.products = products);
   }
   
 }
