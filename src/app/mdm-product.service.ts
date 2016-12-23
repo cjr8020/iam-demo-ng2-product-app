@@ -26,7 +26,7 @@ export class MdmProductService {
     // return Promise.resolve(PRODUCTS);
     return this.http.get(this.mdmProductApiUrl)
       .toPromise()
-      .then(response => response.json().data as Product[])
+      .then(response => response.json() as Product[])
       .catch(this.handleError);
   }
 
