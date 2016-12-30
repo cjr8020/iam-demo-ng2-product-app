@@ -6,7 +6,7 @@
 export const environment = {
   production: false,
 
-  MDM_PRODUCT_SERVER: "http://d-072cxt.corp.standard.com:10080", 
+  MDM_PRODUCT_SERVER: "http://localhost:10080", 
   MDM_PRODUCT_API: "/mdm-product-service/products"
 
 };
